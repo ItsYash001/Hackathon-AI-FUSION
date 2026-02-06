@@ -1,0 +1,48 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-06T10:47:44.178Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 0,
+    "implemented": 0,
+    "items": []
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "backend/migration.mo",
+    "build-request.json",
+    "build-template/README.md",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/App.tsx",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/AppShell.tsx",
+    "frontend/src/components/timetable/TimetableEntryForm.tsx",
+    "frontend/src/components/timetable/WeeklyTimetable.tsx",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/lib/localStorage.ts",
+    "frontend/src/lib/ratings.ts",
+    "frontend/src/lib/types.ts",
+    "frontend/src/pages/MockLoginPage.tsx",
+    "frontend/src/pages/academic-cockpit/AcademicCockpitPage.tsx",
+    "frontend/src/pages/daily-pulse/DailyPulsePage.tsx",
+    "frontend/src/pages/explorers-guide/PlaceDetailPage.tsx",
+    "frontend/src/pages/explorers-guide/PlacesListPage.tsx",
+    "frontend/src/pages/student-exchange/lost-found/LostFoundDetailPage.tsx",
+    "frontend/src/pages/student-exchange/lost-found/LostFoundListPage.tsx",
+    "frontend/src/pages/student-exchange/marketplace/MarketplaceDetailPage.tsx",
+    "frontend/src/pages/student-exchange/marketplace/MarketplaceListPage.tsx",
+    "frontend/src/pages/student-exchange/travel/TravelTripsPage.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

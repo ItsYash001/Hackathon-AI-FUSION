@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Build a full-featured web prototype (frontend + backend) integrating the four foundational campus modules (Daily Pulse, Student Exchange, Explorer’s Guide, Academic Cockpit) with a mock login for demonstration.",
+  "architectural_notes": [
+    "Use mock login (non-production) for initial prototype demonstration.",
+    "Frontend currently renders a blank/white screen after mock login on both mobile and desktop; requires a frontend UI/routing rebuild to restore visible module pages."
+  ],
+  "known_issues": [
+    "After logging in (mock login), the app shows a blank/white screen with no visible frontend UI on both mobile and desktop."
+  ],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-implement-a-mock-login-flow-for-demonstration-that-allows-users-to-choose-a-display-name-and-proceed-into-the-app-with-an-explicit-demo-mock-login-indicator-in-the-ui",
+      "title": "Implement a mock login flow for demonstration that allows users to choose a display name and proceed into the app, with an explicit “Demo / Mock Login” indicator in the UI.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-integrated-app-shell-navigation-routing-that-exposes-the-four-foundational-modules-as-first-class-sections-daily-pulse-student-exchange-explorer-s-guide-and-academic-cockpit-all-accessible-after-mock-login",
+      "title": "Create an integrated app shell (navigation + routing) that exposes the four foundational modules as first-class sections: Daily Pulse, Student Exchange, Explorer’s Guide, and Academic Cockpit, all accessible after mock login.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-daily-pulse-module-backend-ui-with-1-live-mess-menu-that-supports-daily-menus-and-browsing-by-date-and-2-a-mail-summarizer-that-converts-long-pasted-email-text-into-one-sentence-action-items-notices-using-local-heuristic-summarization-no-external-ai-apis",
+      "title": "Implement the Daily Pulse module backend + UI with: (1) Live Mess Menu that supports daily menus and browsing by date, and (2) a Mail Summarizer that converts long pasted email text into one-sentence action items/notices using local heuristic summarization (no external AI APIs).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-student-exchange-module-backend-ui-with-three-sections-1-lost-found-postings-create-list-detail-2-buy-sell-marketplace-listings-create-list-detail-with-basic-fields-like-title-price-category-description-and-3-travel-sharing-cab-pool-coordinator-trips-create-list-join-leave-trip",
+      "title": "Implement the Student Exchange module backend + UI with three sections: (1) Lost & Found postings (create + list + detail), (2) Buy/Sell Marketplace listings (create + list + detail with basic fields like title, price, category, description), and (3) Travel Sharing (cab-pool coordinator) trips (create + list + join/leave trip).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-explorer-s-guide-module-backend-ui-as-a-nearby-hub-directory-of-places-eateries-attractions-hidden-spots-with-user-ratings-and-reviews-including-a-list-view-and-a-place-detail-page",
+      "title": "Implement the Explorer’s Guide module backend + UI as a Nearby Hub directory of places (eateries/attractions/hidden spots) with user ratings and reviews, including a list view and a place detail page.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-academic-cockpit-module-backend-ui-as-a-live-timetable-users-can-add-edit-delete-class-entries-course-name-day-time-location-and-view-them-in-a-timetable-schedule-format",
+      "title": "Implement the Academic Cockpit module backend + UI as a Live Timetable: users can add/edit/delete class entries (course name, day/time, location) and view them in a timetable/schedule format.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-provide-a-consistent-creative-visual-theme-colors-typography-layout-component-styling-for-the-entire-app-login-navigation-all-module-pages-and-apply-it-uniformly-avoid-blue-purple-as-the-primary-palette",
+      "title": "Provide a consistent, creative visual theme (colors, typography, layout, component styling) for the entire app (login, navigation, all module pages) and apply it uniformly (avoid blue/purple as the primary palette).",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-and-include-static-visual-assets-for-branding-and-ui-polish-and-render-them-from-the-frontend-as-static-files-not-via-backend",
+      "title": "Generate and include static visual assets for branding and UI polish, and render them from the frontend as static files (not via backend).",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create full-stack website prototype integrating the four foundational modules into one product",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Implement mock login/authentication flow for demonstration purposes",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Daily Pulse module: Live Mess Menu + AI/ML mail/email summarizer + campus info feed elements",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Student Exchange module: Lost & Found + Buy/Sell marketplace + Travel sharing (cab-pool coordinator)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Explorer’s Guide module: Nearby Hub directory with ratings/reviews and discovery features",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Academic Cockpit module: Live Timetable with customization and update handling",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Add backend persistence in the single Motoko main actor for all module data (mess menus, summarized mail history if stored, lost&found posts, marketplace listings, travel trips + participants, places + reviews, and per-user timetable), keyed by the mock user identity.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Campus Super-App Prototype: Four Modules Integrated with Mock Login",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
